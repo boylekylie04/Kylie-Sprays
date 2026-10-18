@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kylie Sprays – Spray Tanning</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--surface:#FFF3F7;--text:#3A1220;--muted:#7A4A5C;--line:#FFD0E0;--accent:#FF80AB;--on-accent:#3A1220;--accent-text:#C2185B;--tan:#FF80AB;--on-tan:#3A1220;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2A0F1A;--surface:#3A1626;--text:#FFF0F5;--muted:#F2B8CC;--line:#5A2438;--accent:#FF80AB;--on-accent:#3A1220;--accent-text:#FF80AB}}
+:root[data-theme="dark"]{--bg:#2A0F1A;--surface:#3A1626;--text:#FFF0F5;--muted:#F2B8CC;--line:#5A2438;--accent:#FF80AB;--on-accent:#3A1220;--accent-text:#FF80AB}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+nav b{font:800 22px "Bricolage Grotesque",sans-serif}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:14px 26px;border-radius:999px;font-weight:500;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.btn:focus-visible,a:focus-visible,.sw:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{background:var(--tan);color:var(--on-tan);transition:background .6s,color .6s;border-radius:0 0 36px 36px;padding-bottom:48px}
+.hero nav b,.hero nav a{color:inherit}
+.hero h1{font-size:clamp(44px,12vw,92px);font-weight:800;max-width:11ch;margin:36px 0 18px}
+.hero p{max-width:34ch;font-size:19px;margin:0 0 26px}
+.hero .btn{background:var(--on-tan);color:var(--tan);transition:background .6s,color .6s}
+.shades{display:flex;gap:10px;margin-top:40px;flex-wrap:wrap;align-items:center}
+.shades span{font-weight:500;width:100%;font-size:15px}
+.sw{width:56px;height:56px;border-radius:50%;border:3px solid transparent;cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{border-color:var(--on-tan);box-shadow:0 0 0 3px var(--tan)}
+section{padding:64px 0}
+h2{font-size:clamp(30px,7vw,46px);margin-bottom:24px}
+.prices{display:grid;gap:14px}
+.row{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 22px;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.row h3{font-size:21px}.row p{margin:4px 0 0;color:var(--muted);font-size:15px}
+.row .pr{font:700 26px "Bricolage Grotesque",sans-serif;color:var(--accent-text)}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:22px;counter-reset:s}
+.steps li{counter-increment:s;padding-left:58px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font:700 19px "Bricolage Grotesque",sans-serif}
+.steps b{display:block;font-size:19px}.steps span{color:var(--muted)}
+.prep{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px}
+.prep ul{margin:0;padding-left:20px;color:var(--muted)}.prep li{margin:8px 0}
+.cta{text-align:center}
+.cta p{color:var(--muted);margin:0 auto 24px;max-width:36ch}
+footer{padding:28px 0 40px;color:var(--muted);font-size:15px;text-align:center;border-top:1px solid var(--line)}
+.reviews{display:grid;gap:14px}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;margin:0}
+.quote .st{color:var(--accent-text);letter-spacing:2px}
+.quote p{margin:8px 0 14px}
+.quote cite{font-style:normal;font-weight:500;color:var(--muted);font-size:15px}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}.prices{grid-template-columns:1fr 1fr}.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero" id="hero">
+<div class="wrap">
+<nav><b>Kylie Sprays</b><a href="#book" style="text-decoration:none;font-weight:500">Book</a></nav>
+<h1>Glow that looks like yours.</h1>
+<p>Custom spray tans, matched to your skin tone.</p>
+<a class="btn" href="#book">Book a session</a>
+</div>
+</header>
+
+<main class="wrap">
+<section id="services">
+<h2>Services</h2>
+<div class="prices">
+<div class="row"><div><h3>Original</h3><p>Full body, custom shade</p></div><div class="pr">$40</div></div>
+<div class="row"><div><h3>Rapid</h3><p>Develops faster, so you can rinse sooner</p></div><div class="pr">$45</div></div>
+</div>
+</section>
+
+<section class="two">
+<div>
+<h2>How it works</h2>
+<ol class="steps">
+<li><b>Pick your shade</b><span>We match it to your skin tone and the look you want.</span></li>
+<li><b>Get sprayed</b><span>A quick, even application in a private room.</span></li>
+<li><b>Let it develop</b><span>Your colour deepens over a few hours.</span></li>
+<li><b>Rinse and enjoy</b><span>Lasts 5 to 7 days and fades evenly.</span></li>
+</ol>
+</div>
+<div class="prep" style="align-self:start;margin-top:32px">
+<h3 style="font-size:24px;margin-bottom:14px">Before your appointment</h3>
+<ul>
+<li>Exfoliate the day before</li>
+<li>Shave or wax 24 hours ahead</li>
+<li>Skip lotion and perfume on the day</li>
+<li>Wear loose, dark clothing</li>
+</ul>
+</div>
+</section>
+
+<section id="reviews">
+<h2>What clients say</h2>
+<div class="reviews">
+<figure class="quote"><div class="st" aria-label="5 out of 5 stars">★★★★★</div><p>Sample review: replace this with a real comment from one of your clients.</p><cite>Client name</cite></figure>
+<figure class="quote"><div class="st" aria-label="5 out of 5 stars">★★★★★</div><p>Sample review: replace this with a real comment from one of your clients.</p><cite>Client name</cite></figure>
+<figure class="quote"><div class="st" aria-label="5 out of 5 stars">★★★★★</div><p>Sample review: replace this with a real comment from one of your clients.</p><cite>Client name</cite></figure>
+</div>
+</section>
+
+<section class="cta" id="book">
+<h2>Ready to glow?</h2>
+<p>Message us to pick a time. Same-week appointments are often available.</p>
+<a class="btn" href="mailto:boylekylie04@gmail.com?subject=Spray%20tan%20booking">Email to book</a> <a class="btn" href="tel:7743001063">Call or text 774-300-1063</a>
+</section>
+</main>
+
+<footer>
+<div class="wrap">Kylie Sprays · boylekylie04@gmail.com · 774-300-1063</div>
+</footer>
+
+<script>
+(function(){
+var hero=document.getElementById('hero'),name=document.getElementById('shadeName');
+var sw=document.querySelectorAll('.sw');
+var data={'Soft glow':['#E9B98F','#2A1810'],'Sun-kissed':['#C98A55','#2A1810'],'Bronze':['#9A5E32','#FFF3E8'],'Deep bronze':['#5E3519','#FFF3E8']};
+sw.forEach(function(b){b.addEventListener('click',function(){
+var n=b.getAttribute('aria-label'),d=data[n];
+hero.style.setProperty('--tan',d[0]);hero.style.setProperty('--on-tan',d[1]);
+name.textContent=n;
+sw.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+});});
+})();
+</script>
+</body>
+</html>
